@@ -1,0 +1,199 @@
+﻿
+@{
+    ViewData["Title"] = "SectionInfo";
+}
+
+    <header class="header">
+        <div class="global-navigation">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false"><i class="fas fa-user"></i>Username<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a asp-controller="Dashboard" asp-action="Register">Add new user</a></li>
+                            <li><a asp-controller="Dashboard" asp-action="Manage">Manage Users</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a asp-controller="Home" asp-action="Index">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="~/images/MIT-logo-landscape-white@2x.png"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right custom-navbar">
+                        <li><a asp-controller="Dashboard" asp-action="Dashboard">Padlists</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    <section class="header-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="pull-left">
+                        <h3 class="subhead">Programme Approval Document for NZQA</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="pull-right">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <div class="headbar">
+                            <h5 class="subhead">Programme Details</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Programme Title</label>
+                                <input class="form-control" placeholder="Enter title of programme of study">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Programme Code:</label>
+                                <input class="form-control" placeholder="Enter if known or assigned by registry">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Programme Level:</label>
+                                <input class="form-control" placeholder="Enter programme Level">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Programme Credits:</label>
+                                <input class="form-control" placeholder="Enter total credits">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Version:</label>
+                                <input class="form-control" placeholder="Enter version number, e.g. v1.0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <h5 class="subhead">Qualification Details</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Qualification Title</label>
+                                <input class="form-control" placeholder="Enter qualification title">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Qualification number:</label>
+                                <input class="form-control" placeholder="Enter qualification number">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Qualification Level:</label>
+                                <input class="form-control" placeholder="Enter qualification level">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Qualification Credits:</label>
+                                <input class="form-control" placeholder="Enter qualification credits">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Qualification Version:</label>
+                                <input class="form-control" placeholder="Enter version number, e.g. v1.0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <h5 class="subhead">School Details</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>School</label>
+                                <select class="form-control">
+                                    <option>Choose an item</option>
+                                    <option>Automotive</option>
+                                    <option>Business</option>
+                                    <option>Construction & Horticulture</option>
+                                    <option>Digital Technologies</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>School contact person and position title: </label>
+                                <input class="form-control" placeholder="Enter portfolio contact and their position">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="btn-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pull-left">
+
+                    </div>
+                    <div class="pull-right">
+                        <a class="btn btn-mit-red" asp-controller="Dashboard" asp-action="Dashboard">Save &amp; Exit</a>
+                        <a class="btn btn-mit-red" asp-controller="CreateNew" asp-action="CreateSectionOne">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="foot-logo-holder">
+                        <img src="~/images/foot-logo.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+

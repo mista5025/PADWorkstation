@@ -1,0 +1,952 @@
+﻿
+@{
+    ViewData["Title"] = "CreateSectionThree";
+}
+
+
+    <header class="header">
+        <div class="global-navigation">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false"><i class="fas fa-user"></i>Username<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a asp-controller="Dashboard" asp-action="Register">Add new user</a></li>
+                            <li><a asp-controller="Dashboard" asp-action="Manage">Manage Users</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a asp-controller="Home" asp-action="Index">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="~/images/MIT-logo-landscape-white@2x.png"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right custom-navbar">
+                        <li><a asp-controller="Dashboard" asp-action="Dashboard">Padlists</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    <section class="header-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="pull-left">
+                        <h3 class="subhead">Programme Approval Document for NZQA</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="pull-right">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <div class="headbar">
+                            <label class="st-label">Section 3</label>
+                            <h5 class="subhead">Programme components</h5>
+                            <span>
+                                Good evidence the programme is made up of learning outcomes structured in a coherent
+                                way to achieve the qualification outcomes and addresses the relevant needs of learners.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label class="section-subhd">Course Structure and Progression</label>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Course Code </label>
+                                <input class="form-control" placeholder="Enter any">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Course Title </label>
+                                <input class="form-control" placeholder="Enter any">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Pre-requisites </label>
+                                <input class="form-control" placeholder="Enter any">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group fix--height">
+                                <label>Compulsory or Elective (C/E) </label>
+                                <ul class="horizontal-block-list">
+                                    <li class="horizontal-block-list__item">
+                                        <div class="ons-css">
+                                            <label class="radio-button radio-button--material">
+                                                <input type="radio" class="radio-button__input radio-button--material__input"
+                                                       name="r" checked>
+                                                <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+                                                <span>C</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="horizontal-block-list__item">
+                                        <div class="ons-css">
+                                            <label class="radio-button radio-button--material">
+                                                <input type="radio" class="radio-button__input radio-button--material__input"
+                                                       name="r">
+                                                <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+                                                <span>E</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Level </label>
+                                <input class="form-control" placeholder="Enter any">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Credits</label>
+                                <input class="form-control" placeholder="Enter any">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Order of delivery</label>
+                                <input class="form-control" placeholder="Enter any">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>COPs within MNCOP</label>
+                                <ul class="horizontal-block-list">
+                                    <li class="horizontal-block-list__item">
+                                        <div class="ons-css">
+                                            <label class="radio-button radio-button--material">
+                                                <input type="radio" class="radio-button__input radio-button--material__input"
+                                                       name="r" checked>
+                                                <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+                                                <span>Yes</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="horizontal-block-list__item">
+                                        <div class="ons-css">
+                                            <label class="radio-button radio-button--material">
+                                                <input type="radio" class="radio-button__input radio-button--material__input"
+                                                       name="r">
+                                                <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+                                                <span>No</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="clearfix">
+                        <a class="red-link" href="#">+ Add more course</a>
+                    </div>
+                </div>
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <label class="section-subhd">MIT Graduate Capabilities</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label>Course Structure comments: </label>
+                                <input class="form-control" placeholder="Enter any comments/extra information about course structure">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Course Structure diagram: </label>
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                               aria-describedby="inputGroupFileAddon01">
+                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Entry pathways </label>
+                                <input class="form-control" placeholder="Enter entry pathways into programme">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Graduate pathways – Education</label>
+                                <input class="form-control" placeholder="Enter graduate pathways, both study and employment">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Graduate pathways – Career:</label>
+                                <input class="form-control" placeholder="Enter graduate pathways, both study and employment">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label class="section-subhd">Teaching and learning methods</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Enter any further detail about teaching and learning methods here </label>
+                                <input class="form-control" placeholder="Enter any">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Select any further detail about teaching and learning methods here </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4">
+                            <div class="panel teaching-methods">
+                                <div class="normal-checkbox">
+                                    <label class="checkbox checkbox--material">
+                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                    </label>
+                                </div>
+                                <h5 class="teachingmd-hd">Blended Learning</h5>
+                                <p>
+                                    Learners will be actively engaged in a range of individual and group
+                                    activities to enhance and consolidate knowledge. Activities may
+                                    include class and group discussion, lectures, practical activities,
+                                    self-directed research, workshops, role playing, and contextualised
+                                    practice of skills. Technological equipment and software may also
+                                    be used in the learning environment.
+                                </p>
+                                <p>
+                                    Group work and technology e.g. Voki, Wikis, support learners to
+                                    develop, reinforce and supplement lecture material, whilst
+                                    developing skills in self-direction.
+                                </p>
+                                <p>
+                                    Resources such as online quizzes, online learning tools, and
+                                    Internet research exercises, enhance the delivery of teaching and
+                                    learning and reinforce digital literacy competency.
+                                </p>
+                                <p>(Blended learning is, in essence, a mixture of all of the below)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="panel teaching-methods">
+                                <div class="normal-checkbox">
+                                    <label class="checkbox checkbox--material">
+                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                    </label>
+                                </div>
+                                <h5 class="teachingmd-hd">Flipped Classrooms</h5>
+                                <p>
+                                    The typical lecture and homework elements of a course are reversed. Learners engage
+                                    with the theoretical content at home e.g. via video lectures at their own pace.
+                                    Educators can then maximize face-to-face/class time for concept engagement and
+                                    activity based learning.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="panel teaching-methods">
+                                <div class="normal-checkbox">
+                                    <label class="checkbox checkbox--material">
+                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                    </label>
+                                </div>
+                                <h5 class="teachingmd-hd">Scaffolding </h5>
+                                <p>
+                                    Learning activities and deliberate acts of teaching will build on learners’ prior
+                                    knowledge to facilitate the construction of knowledge.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="panel teaching-methods">
+                                <div class="normal-checkbox">
+                                    <label class="checkbox checkbox--material">
+                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                    </label>
+                                </div>
+                                <h5 class="teachingmd-hd">Simulated learning</h5>
+                                <p>
+                                    Simulated learning uses a ‘hands’ on approach to teaching using real life
+                                    environments/contexts, whilst the lecturer maintains the safety, integrity and
+                                    wellbeing of all involved. Simulated learning is designed to enhance student
+                                    understanding by engaging them in solving complex interdependent situations. The
+                                    process requires learners to integrate theory and practice, apply skills learned
+                                    and then, under the direction of their lecturer, reflect on the process/practice.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="panel teaching-methods">
+                                <div class="normal-checkbox">
+                                    <label class="checkbox checkbox--material">
+                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                    </label>
+                                </div>
+                                <h5 class="teachingmd-hd">Activity-based learning</h5>
+                                <p>
+                                    These are learning activities that actively involve learners in their learning.
+                                    Students are actively involved in the learning process through acts of ‘doing’,
+                                    ‘being’ and ‘critically reflecting’. Learners are encouraged to ask questions for
+                                    clarification, to challenge ideas, procedures and content, to attach what is
+                                    learned with skill development, and to engage in discussion with others.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="panel teaching-methods">
+                                <div class="normal-checkbox">
+                                    <label class="checkbox checkbox--material">
+                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                    </label>
+                                </div>
+                                <h5 class="teachingmd-hd">Lecture-led</h5>
+                                <p>
+                                    Lecturer-led delivery focuses on the theoretical knowledge. This is usually through
+                                    face-to-face delivery, but may be imparted online.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="panel teaching-methods">
+                                <div class="normal-checkbox">
+                                    <label class="checkbox checkbox--material">
+                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                    </label>
+                                </div>
+                                <h5 class="teachingmd-hd">Collaborative Learning / Tuakana-Teina</h5>
+                                <p>
+                                    Collaborative learning involves working together toward a common goal with learners
+                                    becoming responsible for one another's learning as well as their own. In this way,
+                                    learners help each other to understand and apply knowledge.
+                                </p>
+                                <p>
+                                    The tuakana-teina relationship provides a model for buddy systems. A more expert
+                                    tuakana helps and guides a less expert teina. In a learning environment that
+                                    recognises the value of ako, the tuakana-teina roles may be reversed at any time.
+                                    This is a mana enhancing process whereby reciprocated/shared knowledge and
+                                    experience are exchanged respectively. The tuakana-teina relationship is an
+                                    integral part of traditional Māori society and provides a peer learning model. This
+                                    buddy system is mutually collaborative, and non-hierarchical, depending on where
+                                    the expertise lies. It is organic, unplanned and enhances and encourages the
+                                    learning that occurs.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="panel teaching-methods">
+                                <div class="normal-checkbox">
+                                    <label class="checkbox checkbox--material">
+                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                    </label>
+                                </div>
+                                <h5 class="teachingmd-hd">Self-reflective Analysis</h5>
+                                <p>
+                                    Learners will use self-reflective and comparative processes to analyse individual
+                                    practises in industry.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="panel teaching-methods">
+                                <div class="normal-checkbox">
+                                    <label class="checkbox checkbox--material">
+                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                    </label>
+                                </div>
+                                <h5 class="teachingmd-hd">Wānanga</h5>
+                                <p>
+                                    Wānanga is an approach to learning and technology in a Māori context. Wānanga is
+                                    primarily based on unique values and principles in accordance with Kaupapa Māori.
+                                    Wānanga as a delivery method enhances an understanding of working in culturally
+                                    appropriate ways, working with Māori, working bi-culturally, and in the application
+                                    of tikanga and te reo Māori.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="panel teaching-methods">
+                                <div class="normal-checkbox">
+                                    <label class="checkbox checkbox--material">
+                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                    </label>
+                                </div>
+                                <h5 class="teachingmd-hd">Noho marae</h5>
+                                <p>
+                                    Noho marae (overnight stays on marae) provides opportunities for learners to engage
+                                    in the rituals of encounter with Iwi and Hapū.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="panel teaching-methods">
+                                <div class="normal-checkbox">
+                                    <label class="checkbox checkbox--material">
+                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                    </label>
+                                </div>
+                                <h5 class="teachingmd-hd">Guest Speakers </h5>
+                                <p>
+                                    Guest speakers from industry share relevant experience and expertise to enhance the
+                                    delivery of teaching and learning.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="panel teaching-methods">
+                                <div class="normal-checkbox">
+                                    <label class="checkbox checkbox--material">
+                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                    </label>
+                                </div>
+                                <h5 class="teachingmd-hd">Case Studies </h5>
+                                <p>
+                                    Learners will utilise case studies to consolidate learning and apply theoretical
+                                    concepts.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="panel teaching-methods">
+                                <div class="normal-checkbox">
+                                    <label class="checkbox checkbox--material">
+                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                    </label>
+                                </div>
+                                <h5 class="teachingmd-hd">Critical Analysis</h5>
+                                <p>
+                                    Self and peer analysis tools will be used to develop critical thinking around
+                                    practise and theory.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="panel teaching-methods">
+                                <div class="normal-checkbox">
+                                    <label class="checkbox checkbox--material">
+                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                    </label>
+                                </div>
+                                <h5 class="teachingmd-hd">Research</h5>
+                                <p>
+                                    Learners will select and use articles from recommended journals and texts to
+                                    reinforce and enhance theoretical principles.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <label class="section-subhd">Assessment Methods</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label>Methods of Assessment </label>
+                                <input class="form-control" placeholder="Enter any">
+                                <p class="note-text">
+                                    All assessment will comply with the Assessment and Moderation
+                                    (including Results) Policy (AC4).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label>Literacy and Numeracy Assessment:</label>
+                                <input class="form-control" placeholder="If required, describe how the L&N for Adults Assessment Tool is used.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <label class="section-subhd">Programme Regulations</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Academic Requirements:</label>
+                                <input class="form-control" placeholder="Enter academic requirements">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>General Requirements:</label>
+                                <input class="form-control" placeholder="Enter general Requirements:">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Interview Requirements:</label>
+                                <input class="form-control" placeholder="Enter general requirements">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>English Language Requirements:</label>
+                                <input class="form-control" placeholder="Enter general requirements">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Selection Criteria:</label>
+                                <input class="form-control" placeholder="Enter general requirements">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Exceptions to entry:</label>
+                                <input class="form-control" placeholder="Enter general requirements">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <label class="subhead">Periods for completion:</label>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Minimum time to complete full time: </label>
+                                <input class="form-control" placeholder="Enter general requirements">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Maximum to complete full time: </label>
+                                <input class="form-control" placeholder="Enter a timeframe e.g. 6 months">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Minimum time to complete part time</label>
+                                <input class="form-control" placeholder="Enter a timeframe e.g. 6 months">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Maximum to complete part time: </label>
+                                <input class="form-control" placeholder="Enter a timeframe e.g. 6 months">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Alternative Entry points: </label>
+                                <input class="form-control" placeholder="Enter alternative date of entry">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Alternative Exit points: </label>
+                                <input class="form-control" placeholder="Enter alternative date of entry">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Credit recognition: </label>
+                                <input class="form-control" placeholder="Enter alternative date of entry">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <label class="section-subhd">Transition Arrangements</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label>Transition Arrangements </label>
+                                <input class="form-control" placeholder="Enter any">
+
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label>Work-based Component requirements: </label>
+                                <input class="form-control" placeholder="Enter any">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <label class="section-subhd">Assessment Regulations</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr class="thead--row">
+                                            <th>Assessments</th>
+                                            <th>Specific requirements</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr class="trow">
+                                            <td>Impaired Performance and Criteria for Aegrotat Pass</td>
+                                            <td> <input class="form-control" placeholder="Enter a number of weeks"></td>
+
+                                        </tr>
+
+                                        <tr class="trow">
+                                            <td>Assessment in Te Reo Māori</td>
+                                            <td> <input class="form-control" placeholder="Enter a number of weeks"></td>
+
+                                        </tr>
+                                        <tr class="trow">
+                                            <td>Reassessments</td>
+                                            <td> <input class="form-control" placeholder="Enter a number of weeks"></td>
+
+                                        </tr>
+                                        <tr class="trow">
+                                            <td>Late submissions and extensions</td>
+                                            <td> <input class="form-control" placeholder="Enter a number of weeks"></td>
+
+                                        </tr>
+                                        <tr class="trow">
+                                            <td>Appeals</td>
+                                            <td> <input class="form-control" placeholder="Enter a number of weeks"></td>
+
+                                        </tr>
+                                        <tr class="trow">
+                                            <td>Conceded and Restricted Passes</td>
+                                            <td> <input class="form-control" placeholder="Enter a number of weeks"></td>
+
+                                        </tr>
+                                        <tr class="trow">
+                                            <td>Alternative assessment arrangements</td>
+                                            <td> <input class="form-control" placeholder="Enter a number of weeks"></td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Grade Criteria: </label>
+                                <input class="form-control" placeholder="Enter any">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Award criteria - academic: </label>
+                                <input class="form-control" placeholder="Enter any">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Other Award Criteria: </label>
+                                <input class="form-control" placeholder="Enter any">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label>Award Criteria - Attendance Requirements:</label>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="thead--row">
+                                                <th>Course</th>
+                                                <th>Course Attendance Requirements</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tbody">
+                                            <tr class="trow">
+                                                <td>Course</td>
+                                                <td> <input class="form-control" placeholder="Enter attendance requirements"></td>
+                                            </tr>
+
+                                            <tr class="trow">
+                                                <td>Course</td>
+                                                <td> <input class="form-control" placeholder="Enter attendance requirements"></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <label class="section-subhd">Information for students</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="table-responsive">
+                                <table class="table">
+
+                                    <tbody class="tbody">
+                                        <tr class="trow">
+                                            <td>
+                                                General information e.g. requirement for students to provide resources
+                                                or materialse
+                                            </td>
+                                            <td> <input class="form-control" placeholder="Enter attendance requirements"></td>
+                                        </tr>
+
+                                        <tr class="trow">
+                                            <td>Credit recognition, credit transfer and RPL</td>
+                                            <td> <input class="form-control" placeholder="Enter attendance requirements"></td>
+                                        </tr>
+                                        <tr class="trow">
+                                            <td>Appeal provisions</td>
+                                            <td> <input class="form-control" placeholder="Enter attendance requirements"></td>
+                                        </tr>
+                                        <tr class="trow">
+                                            <td>Course assessment information and requirements</td>
+                                            <td> <input class="form-control" placeholder="Enter attendance requirements"></td>
+                                        </tr>
+                                        <tr class="trow">
+                                            <td>Assessment timetables</td>
+                                            <td> <input class="form-control" placeholder="Enter attendance requirements"></td>
+                                        </tr>
+                                        <tr class="trow">
+                                            <td>Pass and grade values</td>
+                                            <td> <input class="form-control" placeholder="Enter attendance requirements"></td>
+                                        </tr>
+                                        <tr class="trow">
+                                            <td>How achievement will be reported</td>
+                                            <td> <input class="form-control" placeholder="Enter attendance requirements"></td>
+                                        </tr>
+                                        <tr class="trow">
+                                            <td>Arrangements for the return of assessment evidence</td>
+                                            <td> <input class="form-control" placeholder="Enter attendance requirements"></td>
+                                        </tr>
+                                        <tr class="trow">
+                                            <td>Entry Process</td>
+                                            <td> <input class="form-control" placeholder="Enter attendance requirements"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label>
+                                    MIT Policies:
+                                </label>
+                                <textarea class="form-control" placeholder="Enter any"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <label class="section-subhd">Consistency arrangements</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Enter any general consistency comments</label>
+                                <input class="form-control" placeholder="Enter any general consistency">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Consistency of Delivery across Multiple Sites of a Single Organisation:</label>
+                                <input class="form-control" placeholder="Enter general Requirements:">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Consistency of Delivery by Multiple Accredited Organisations: </label>
+                                <input class="form-control" placeholder="Enter general requirements">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <label class="section-subhd">Moderation</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label>Internal Moderation: </label>
+                                <p>
+                                    The School of Choose an item. <select class="form-control form-control--inline">
+                                        <option>1</option>
+                                        <option>1</option>
+                                        <option>1</option>
+                                        <option>1</option>
+                                        <option>1</option>
+                                    </select> responsible for having in place assessment and moderation procedures and
+                                    plans that meet the requirements of continuous improvement and the outcomes
+                                    focussed purposes of accountability and contribution to learning. Moderation is one
+                                    of the essential processes that contribute to the delivery of quality teaching and
+                                    programmes as part of the MIT Quality Assurance System, Student Regulations and MIT
+                                    Academic Policies AC4 and AC8.
+                                </p>
+                                <p>
+                                    1. All internal moderation will comply with the Assessment and Moderation (including
+                                    Results) Policy (AC4). In keeping with MIT policy all assessments will be:
+                                </p>
+                                <p>
+                                    2. Pre-assessment moderated prior to first use, and following any amendment to the
+                                    assessment
+                                </p>
+                                <input class="form-control" placeholder="Enter any general consistency">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr class="thead--row">
+                                            <th>Course</th>
+                                            <th>First moderation</th>
+                                            <th>Frequency</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr class="trow">
+                                            <td><input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                        </tr>
+                                        <tr class="trow">
+                                            <td><input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <label class="section-subhd">External Moderation: </label>
+                        <p>
+                            MIT will engage with an external moderator as required by the Assessment and Moderation
+                            (including Results) Policy (AC4) and in accordance with the moderation schedule provided in
+                            the table below. External moderation will take place according to the School/Programme
+                            Moderation Plan, and as a minimum, as follows:
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr class="thead--row">
+                                            <th>Course</th>
+                                            <th>First moderation</th>
+                                            <th>Frequency</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr class="trow">
+                                            <td><input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                        </tr>
+                                        <tr class="trow">
+                                            <td><input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="btn-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pull-left">
+                        <a class="btn btn-mit-red btn--inverse" asp-controller="CreateNew" asp-action="CreateSectionTwo" >Back</a>
+                    </div>
+                    <div class="pull-right">
+                        <a class="btn btn-mit-red" asp-controller="Dashboard" asp-action="Dashboard">Save &amp; Exit</a>
+                        <a class="btn btn-mit-red" asp-controller="CreateNew" asp-action="CreateSectionFour">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="foot-logo-holder">
+                        <img src="~/images/foot-logo.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+

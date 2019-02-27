@@ -1,0 +1,626 @@
+﻿
+@{
+    ViewData["Title"] = "CreateSectionOne";
+}
+
+
+    <header class="header">
+        <div class="global-navigation">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false"><i class="fas fa-user"></i>Username<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a asp-controller="Dashboard" asp-action="Register">Add new user</a></li>
+                            <li><a asp-controller="Dashboard" asp-action="Manage">Manage Users</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a asp-controller="Home" asp-action="Index">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="~/images/MIT-logo-landscape-white@2x.png"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right custom-navbar">
+                        <li><a asp-controller="Dashboard" asp-action="Dashboard">Padlists</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    <section class="header-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="pull-left">
+                        <h3 class="subhead">Programme Approval Document for NZQA</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="pull-right">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <div class="headbar">
+                            <label class="st-label">Section 1</label>
+                            <h5 class="subhead">Strategic Purpose</h5>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label class="section-subhd">Factual Summary</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Programme aims/Strategic purpose: </label>
+                                <textarea class="form-control" placeholder="Describe the aim/strategic purpose of the offering in relation to the needs of intended students, industry, community, and employers."></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Background/context:</label>
+                                <textarea class="form-control" placeholder="Briefly provide a description of the offering and the reasons for its development/redevelopment"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label>Content:</label>
+                                <textarea class="form-control" placeholder="Copy course titles and purpose statement from course descriptors"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>NZSCED code:</label>
+                                <input class="form-control" placeholder="Enter NZSCED code.">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>DAS Assessment</label>
+                                <input class="form-control" placeholder="List any DAS Standards Number, Title, Credit and Version).">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Consent to Assess:</label>
+                                <input class="form-control" placeholder="Enter N/A or Yes or list standards for which consent to assess is being sought">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>DAS Credits:</label>
+                                <input class="form-control" placeholder="Enter N/A or enter a credit value">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Other credits:</label>
+                                <input class="form-control" placeholder="Enter number of credits for the programme of study">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Total Credits:</label>
+                                <input class="form-control" placeholder="Enter total credits">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>International/Domestic Student Type:</label>
+                                <select class="form-control">
+                                    <option>Choose an item</option>
+                                    <option>International</option>
+                                    <option>Domestic</option>
+                                    <option>International and Domestic</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>International/Domestic Student Type:</label>
+                                <select class="form-control">
+                                    <option>Choose an item</option>
+                                    <option>International</option>
+                                    <option>Domestic</option>
+                                    <option>International and Domestic</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Notional hours: </label>
+                                <input class="form-control" placeholder="Enter total study hours. 1 credit = approx. 10 hours">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Minimum EFTs: </label>
+                                <input class="form-control" placeholder="Enter minimum total EFTs value">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Proposed start date (first intake): </label>
+                                <input class="form-control datepicker" id="dp1" placeholder="Enter minimum total EFTs value">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Last day of proposed intake: </label>
+                                <input class="form-control datepicker" id="dp2" placeholder="Enter minimum total EFTs value">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Date Applications Close: </label>
+                                <input class="form-control datepicker" id="dp3" placeholder="Enter minimum total EFTs value">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Alternative dates of entry into the programme: </label>
+                                <input class="form-control datepicker" id="dp3" placeholder="Enter minimum total EFTs value">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <label class="section-subhd">Funding and delivery</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Intial Source of Funding: </label>
+                                <ul class="vertical-block-list">
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>TEC / SAC </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>Self-funding – Private Sector</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>ITO</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>Youth Guarantee </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>MPTT</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>Other</span>
+                                            </label>
+                                        </div>
+                                        <div class="clearfix">
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="Please specify">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Delivery: </label>
+                                <ul class="vertical-block-list">
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>Full-time </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>Part time</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>Block</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>Weekend</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>Summer school</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Delivery Sites, Campuses and/or Venues</label>
+                                <ul class="vertical-block-list">
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>MIT Otara </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>MIT Manukau</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>New Zealand Maritime School Sites</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>MIT Queen Street</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>MIT Mangere</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="vertical-block-list__item">
+                                        <div class="normal-checkbox">
+                                            <label class="checkbox checkbox--material">
+                                                <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                <span>Other</span>
+                                            </label>
+                                        </div>
+                                        <div class="clearfix">
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="Please specify">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Student loans and allowances:</label>
+                                <select class="form-control">
+                                    <option>Choose an item</option>
+                                    <option>International</option>
+                                    <option>Domestic</option>
+                                    <option>International and Domestic</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Ministry classification of internet based learning </label>
+                                <select class="form-control">
+                                    <option>Choose an item</option>
+                                    <option>International</option>
+                                    <option>Domestic</option>
+                                    <option>International and Domestic</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Overall mode of delivery: </label>
+                                <select class="form-control">
+                                    <option>Choose an item</option>
+                                    <option>International</option>
+                                    <option>Domestic</option>
+                                    <option>International and Domestic</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Non Tuition Fees (NTFS):</label>
+                                <ul class="horizontal-block-list">
+                                    <li class="horizontal-block-list__item">
+                                        <div class="ons-css">
+                                            <label class="radio-button radio-button--material">
+                                                <input type="radio" class="radio-button__input radio-button--material__input"
+                                                       name="r" checked>
+                                                <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+                                                <span>Yes</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="horizontal-block-list__item">
+                                        <div class="ons-css">
+                                            <label class="radio-button radio-button--material">
+                                                <input type="radio" class="radio-button__input radio-button--material__input"
+                                                       name="r">
+                                                <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+                                                <span>No</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Expected student intake </label>
+                                <input class="form-control" placeholder="Enter expected EFTs in first cohort">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Proposed tutor: student ratio </label>
+                                <input class="form-control" placeholder="Enter tutor: student ratio">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Alternative Name for Marketing Purposes </label>
+                                <input class="form-control" placeholder="Enter alternative name. Default is the title of the programme">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Programme Overview for Marketing Purposes </label>
+                                <input class="form-control" placeholder="Provide overview in ‘marketing speak">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label>Start Months (Intakes) </label>
+                                <select class="form-control">
+                                    <option>Choose an item</option>
+                                    <option>July</option>
+                                    <option>October</option>
+                                    <option>February</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container__block">
+                    <div class="clearfix">
+                        <label class="section-subhd">Programme Length</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr class="thead--row">
+                                            <th class="col-md-2">Programme Length/Duration</th>
+                                            <th class="col-md-2">Full Time(within Calendar Year)</th>
+                                            <th class="col-md-2">Full Time(across Calendar Year)</th>
+                                            <th class="col-md-2">Part-Time Or not applicable</th>
+                                            <th class="col-md-2">Other - e.g. Summer School/Weekends Or not applicable</th>
+                                            <th class="col-md-2">
+                                                Other - e.g. Block (learners are required to attend
+                                                one or more periods
+                                                of intensive study) Or not applicable
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr class="trow">
+                                            <td class="col-md-2">Duration: Total weeks (including holiday weeks)</td>
+                                            <td class="col-md-2"> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td class="col-md-2"> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td class="col-md-2"> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td class="col-md-2"> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td class="col-md-2"> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                        </tr>
+                                        <tr class="trow">
+                                            <td class="col-md-2">Duration: Teaching weeks (excluding holiday weeks)</td>
+                                            <td class="col-md-2"> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td class="col-md-2"> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td class="col-md-2"> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td class="col-md-2"> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td class="col-md-2"> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                        </tr>
+                                        <tr class="trow">
+                                            <td class="col-md-2">Work-based Components</td>
+                                            <td class="col-md-2"> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td class="col-md-2"> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td class="col-md-2"> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td class="col-md-2"> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                            <td class="col-md-2"> <input class="form-control" placeholder="Enter a number of weeks"></td>
+                                        </tr>
+                                        <tr class="trow">
+                                            <td class="col-md-2">RO482 Programme Length</td>
+                                            <td class="col-md-2">
+                                                <div class="normal-checkbox">
+                                                    <label class="checkbox checkbox--material">
+                                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="col-md-2">
+                                                <div class="normal-checkbox">
+                                                    <label class="checkbox checkbox--material">
+                                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="col-md-2">
+                                                <div class="normal-checkbox">
+                                                    <label class="checkbox checkbox--material">
+                                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="col-md-2">
+                                                <div class="normal-checkbox">
+                                                    <label class="checkbox checkbox--material">
+                                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="col-md-2">
+                                                <div class="normal-checkbox">
+                                                    <label class="checkbox checkbox--material">
+                                                        <input autocomplete="nope" type="checkbox" class="checkbox__input checkbox--material__input">
+                                                        <div class="check-section checkbox__checkmark checkbox--material__checkmark"></div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>RO482 Delivery Methods </label>
+                                <input class="form-control" placeholder="Enter any other delivery methods not included above.">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="btn-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pull-left">
+                        <a class="btn btn-mit-red btn--inverse" href="edit.html">Back</a>
+                    </div>
+                    <div class="pull-right">
+                        <a class="btn btn-mit-red" href="">Save &amp; Exit</a>
+                        <a class="btn btn-mit-red" asp-controller="CreateNew" asp-action="CreateSectionTwo">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="foot-logo-holder">
+                        <img src="~/images/foot-logo.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <
+
+
